@@ -48,15 +48,7 @@ async function run(){
         const result= await commentCollection.insertOne(commentData)
         res.send(result)
        })
-       app.get("/comment/:subject",async(req,res)=>{
-        console.log(req.query.subject)
-        // const commentMatch=(req.query.subject) 
-        // const query={subject: commentMatch}
-
-        
-        // const cursor=await commentCollection.find(query).toArray()
-        // res.send(cursor)
-       })
+       
 
     app.get("/completed",async(req,res)=>{
 
